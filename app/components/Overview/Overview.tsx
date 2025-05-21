@@ -14,7 +14,7 @@ export default function Overview() {
     return (
         <section className="p-6 rounded-md bg-background-main">
             <div
-                className="bg-primary px-[calc(var(--spacing-parent-hor)-1.5rem)] pt-parent-vert rounded-t-3xl  space-y-6"
+                className="bg-primary px-4 sm:px-[calc(var(--spacing-parent-hor)-1.5rem)] pt-[calc(var(--spacing-parent-hor)/2] rounded-t-3xl  space-y-6"
                 style={{
                     backgroundImage: `url(${overviewBg})`,
                     backgroundRepeat: "no-repeat",
