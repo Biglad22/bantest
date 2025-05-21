@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --color-background-main: rgba(255, 255, 255, 1);
+    --color-background-secondary: rgba(242, 242, 242, 1);
+
+    --color-primary: rgba(30, 0, 96, 1);
+    --color-secondary: rgba(242, 175, 129, 1);
+    --color-custom-indigoBlue: "rgba(83, 70, 233, 1)";
+    --color-custom-purple: "rgba(124, 10, 255, 1)";
+    --color-custom-darkGray: "rgba(40, 39, 39, 1)";
+    --color-custom-royalBlue: "rgba(56, 102, 255, 1)";
+    --color-custom-aquaMint: "rgba(70, 255, 209, 1)";
+    --color-surface-light: rgba(255, 255, 255, 1);
+    --color-surface-dark: rgba(27, 27, 27, 1);
+    --color-surface-purple: rgba(213, 181, 247, 0.88);
+    --color-footer: rgba(8, 8, 8, 1);
+    --color-overlay: rgba(21, 15, 4, 0.32);
+
+    --radius-5xl: 3rem;
+    --spacing-parent-vert: 10vh;
+    --spacing-parent-hor: 10vmin;
+}
+
+html,
+body {
+    @apply bg-white dark:bg-gray-950 overflow-x-hidden;
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+.section {
+    @apply px-parent-hor py-parent-vert min-h-screen w-screen space-y-12;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hero-overlay {
+    @apply w-full h-full rounded-b-5xl bg-overlay absolute top-0 left-0 z-20;
+    background-image: url("./assets/overlay-bg.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+/* Responsive Headings and Text */
+
+@layer base {
+    h1 {
+        font-size: 2.25rem; /* 36px */
+    }
+    @media (min-width: 640px) {
+        h1 {
+            font-size: 2.5rem; /* 40px */
+        }
+    }
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 3rem; /* 48px */
+        }
+    }
+    @media (min-width: 1024px) {
+        h1 {
+            font-size: 3.75rem; /* 60px */
+        }
+    }
+
+    h2 {
+        font-size: 2rem; /* 32px */
+    }
+    @media (min-width: 640px) {
+        h2 {
+            font-size: 2.25rem; /* 36px */
+        }
+    }
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 2.5rem; /* 40px */
+        }
+    }
+    @media (min-width: 1024px) {
+        h2 {
+            font-size: 3rem; /* 48px */
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem; /* 24px */
+    }
+    @media (min-width: 640px) {
+        h3 {
+            font-size: 1.875rem; /* 30px */
+        }
+    }
+    @media (min-width: 768px) {
+        h3 {
+            font-size: 2.25rem; /* 36px */
+        }
+    }
+    @media (min-width: 1024px) {
+        h3 {
+            font-size: 2.5rem; /* 40px */
+        }
+    }
+
+    h4 {
+        font-size: 1.25rem; /* 20px */
+    }
+    @media (min-width: 640px) {
+        h4 {
+            font-size: 1.5rem; /* 24px */
+        }
+    }
+    @media (min-width: 768px) {
+        h4 {
+            font-size: 1.875rem; /* 30px */
+        }
+    }
+    @media (min-width: 1024px) {
+        h4 {
+            font-size: 2.25rem; /* 36px */
+        }
+    }
+
+    h5 {
+        font-size: 1rem; /* 16px */
+    }
+    @media (min-width: 640px) {
+        h5 {
+            font-size: 1.25rem; /* 20px */
+        }
+    }
+    @media (min-width: 768px) {
+        h5 {
+            font-size: 1.5rem; /* 24px */
+        }
+    }
+    @media (min-width: 1024px) {
+        h5 {
+            font-size: 1.875rem; /* 30px */
+        }
+    }
+
+    h6 {
+        font-size: 0.875rem; /* 14px */
+    }
+    @media (min-width: 640px) {
+        h6 {
+            font-size: 1rem; /* 16px */
+        }
+    }
+    @media (min-width: 768px) {
+        h6 {
+            font-size: 1.125rem; /* 18px */
+        }
+    }
+    @media (min-width: 1024px) {
+        h6 {
+            font-size: 1.25rem; /* 20px */
+        }
+    }
+
+    p,
+    button,
+    a,
+    li {
+        font-size: 1rem; /* 16px */
+    }
+
+    small {
+        font-size: 0.875rem; /* 14px */
+    }
+    @media (min-width: 640px) {
+        small {
+            font-size: 1rem; /* 16px */
+        }
+    }
+}
+.strong-text {
+    @apply text-[#101010];
+}
+.light-text {
+    @apply text-[#1D1D21];
+}
+
