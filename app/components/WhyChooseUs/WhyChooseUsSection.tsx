@@ -36,8 +36,10 @@ const whyChooseUsData = [
 export default function WhyChooseUsSection() {
     return (
         <section className="section relative bg-background-main">
-            <div className=" sm:w-[calc(60%+2.5rem)] sm:pr-10  h-full sm:absolute sm:top-0 sm:left-0 sm:px-parent-hor sm:py-parent-vert sm:z-40 sm:bg-gradient-to-r from-background-main from-65% to-background-main/0">
-                <SectionHeader>Why Choose savuney</SectionHeader>
+            <div className=" space-y-4 sm:w-[calc(60%+2.5rem)] sm:pr-10  h-full sm:absolute sm:top-0 sm:left-0 sm:px-parent-hor sm:py-parent-vert sm:z-40 sm:bg-gradient-to-r from-background-main from-65% to-background-main/0">
+                <SectionHeader size="md" className="font-normal">
+                    Why Choose savuney
+                </SectionHeader>
                 <p className="light-text">
                     Discover solutions tailored to your needs.
                 </p>

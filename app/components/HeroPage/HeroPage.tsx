@@ -19,7 +19,7 @@ export default function HeroPage() {
                     {/* overlay */}
                     <div className="hero-overlay"></div>
                 </div>
-                <div className="relative !text-background-main z-20 sm:w-[70%]  py-parent-vert  px-[calc(var(--spacing-parent-hor)-1.5rem)]  space-y-6 text-center sm:text-left">
+                <div className="relative !text-background-main z-20 sm:w-1/2  py-parent-vert  px-[calc(var(--spacing-parent-hor)-1.5rem)]  space-y-6 text-center sm:text-left">
                     <h1 className="!font-medium">BANK OF THE UNBANKED</h1>
                     <h6>
                         Digital bank experience tailored to rural and suburban

@@ -49,139 +49,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Responsive Headings and Text */
-
-@layer base {
-    h1 {
-        font-size: 2.25rem; /* 36px */
-    }
-    @media (min-width: 640px) {
-        h1 {
-            font-size: 2.5rem; /* 40px */
-        }
-    }
-    @media (min-width: 768px) {
-        h1 {
-            font-size: 3rem; /* 48px */
-        }
-    }
-    @media (min-width: 1024px) {
-        h1 {
-            font-size: 3.75rem; /* 60px */
-        }
-    }
-
-    h2 {
-        font-size: 2rem; /* 32px */
-    }
-    @media (min-width: 640px) {
-        h2 {
-            font-size: 2.25rem; /* 36px */
-        }
-    }
-    @media (min-width: 768px) {
-        h2 {
-            font-size: 2.5rem; /* 40px */
-        }
-    }
-    @media (min-width: 1024px) {
-        h2 {
-            font-size: 3rem; /* 48px */
-        }
-    }
-
-    h3 {
-        font-size: 1.5rem; /* 24px */
-    }
-    @media (min-width: 640px) {
-        h3 {
-            font-size: 1.875rem; /* 30px */
-        }
-    }
-    @media (min-width: 768px) {
-        h3 {
-            font-size: 2.25rem; /* 36px */
-        }
-    }
-    @media (min-width: 1024px) {
-        h3 {
-            font-size: 2.5rem; /* 40px */
-        }
-    }
-
-    h4 {
-        font-size: 1.25rem; /* 20px */
-    }
-    @media (min-width: 640px) {
-        h4 {
-            font-size: 1.5rem; /* 24px */
-        }
-    }
-    @media (min-width: 768px) {
-        h4 {
-            font-size: 1.875rem; /* 30px */
-        }
-    }
-    @media (min-width: 1024px) {
-        h4 {
-            font-size: 2.25rem; /* 36px */
-        }
-    }
-
-    h5 {
-        font-size: 1rem; /* 16px */
-    }
-    @media (min-width: 640px) {
-        h5 {
-            font-size: 1.25rem; /* 20px */
-        }
-    }
-    @media (min-width: 768px) {
-        h5 {
-            font-size: 1.5rem; /* 24px */
-        }
-    }
-    @media (min-width: 1024px) {
-        h5 {
-            font-size: 1.875rem; /* 30px */
-        }
-    }
-
-    h6 {
-        font-size: 0.875rem; /* 14px */
-    }
-    @media (min-width: 640px) {
-        h6 {
-            font-size: 1rem; /* 16px */
-        }
-    }
-    @media (min-width: 768px) {
-        h6 {
-            font-size: 1.125rem; /* 18px */
-        }
-    }
-    @media (min-width: 1024px) {
-        h6 {
-            font-size: 1.25rem; /* 20px */
-        }
-    }
-
-    p,
-    button,
-    a,
-    li {
-        font-size: 1rem; /* 16px */
-    }
-
-    small {
-        font-size: 0.875rem; /* 14px */
-    }
-    @media (min-width: 640px) {
-        small {
-            font-size: 1rem; /* 16px */
-        }
-    }
-}
 .strong-text {
     @apply text-[#101010];
 }
@@ -200,3 +67,34 @@ body {
     transform: matrix(-0.35, -0.94, 0.89, -0.47, 0, 0);
 }
 
+h1 {
+    @apply text-4xl sm:text-7xl;
+}
+
+h2 {
+    @apply text-3xl sm:text-6xl;
+}
+
+h3 {
+    @apply text-2xl sm:text-5xl;
+}
+
+h4 {
+    @apply text-xl sm:text-4xl;
+}
+
+h5 {
+    @apply text-lg sm:text-3xl;
+}
+h6 {
+    @apply text-base sm:text-2xl;
+}
+p,
+a,
+button,
+li {
+    @apply text-sm sm:text-base;
+}
+small {
+    @apply text-xs sm:text-sm;
+}

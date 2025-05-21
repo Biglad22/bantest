@@ -22,7 +22,7 @@ const variantClasses = {
 
 export const SectionHeader: React.FC<SectionHeaderProps> = ({
     children,
-    size = "md",
+    size = "sm",
     variant = "primary",
     className = "",
 }) => {
@@ -30,13 +30,13 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
 
     switch (size) {
         case "lg":
+            return <h2 className={classes}>{children}</h2>;
+
+        case "md":
             return <h3 className={classes}>{children}</h3>;
 
-        case "md":
+        case "sm":
             return <h4 className={classes}>{children}</h4>;
-
-        case "md":
-            return <h5 className={classes}>{children}</h5>;
     }
 };
 

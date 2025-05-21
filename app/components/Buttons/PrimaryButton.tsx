@@ -16,7 +16,7 @@ export default function PrimaryButton({
 }: Props) {
     const classes: string = clsx(
         className || "",
-        "flex items-center justify-center py-2 px-4 gap-2 w-fit rounded-4xl bg-primary border-3 border-background-main font-semibold",
+        "flex items-center justify-center py-3 px-4 gap-2 w-fit rounded-4xl bg-primary border-3 border-background-main font-semibold",
         icon && "pr-2"
     );
 
@@ -30,7 +30,7 @@ export default function PrimaryButton({
                 {children}
                 {icon && icon}
                 {!icon && (
-                    <span className="block rounded-full p-2 bg-secondary borders border-background-main">
+                    <span className="block rounded-full p-2 bg-secondary border border-background-main">
                         <PiCaretRightBold className="text-base" />
                     </span>
                 )}

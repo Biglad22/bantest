@@ -28,7 +28,11 @@ export default function AboutUsSection() {
                         <span className="w-2 h-2 bg-surface-dark rounded-full"></span>
                         <p>About Savuney</p>
                     </div>
-                    <SectionHeader variant="primary">
+                    <SectionHeader
+                        variant="primary"
+                        size="sm"
+                        className="w-full md:w-3/4"
+                    >
                         Financial services for everyone no matter where they
                         live.
                     </SectionHeader>

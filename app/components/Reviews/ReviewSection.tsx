@@ -24,12 +24,12 @@ export default function ReviewSection() {
     return (
         <section className="section py-parent-vert px-parent-hor bg-gradient-to-b from-primary to-footer">
             <div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 mb-4">
                     <span className="block w-2 h-2 bg-background-main rounded-full"></span>
                     <p className="text-background-main">TESTIMONIAL</p>
                 </div>
                 <SectionHeader
-                    size="lg"
+                    size="md"
                     className="text-white font-medium w-full sm:w-1/2"
                 >
                     What people are saying about Savuney

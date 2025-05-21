@@ -2,6 +2,7 @@ import React from "react";
 import { overviewBg } from "~/assets/images";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import DataCard from "./OverviewCard";
+import { HiH1 } from "react-icons/hi2";
 
 const stats = [
     { label: "Loan disbursed to Locals", value: "₦ 10M+" },
@@ -13,17 +14,17 @@ export default function Overview() {
     return (
         <section className="p-6 rounded-md bg-background-main">
             <div
-                className="bg-primary px-[calc(var(--spacing-parent-hor)-1.5rem)] pt-parent-vert rounded-lg space-y-6"
+                className="bg-primary px-[calc(var(--spacing-parent-hor)-1.5rem)] pt-parent-vert rounded-t-3xl  space-y-6"
                 style={{
                     backgroundImage: `url(${overviewBg})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "left center",
                 }}
             >
-                <SectionHeader variant="tertiary" size="lg">
+                <h2 className="w-full md:w-1/2 font-normal py-parent-vert">
                     Over <span className="font-bold">1,000+</span> App Downloads
-                </SectionHeader>
-                <div className="flex flex-col md:flex-row gap-4 justify-between">
+                </h2>
+                <div className="flex flex-col md:flex-row gap-8 justify-between">
                     {stats.map((stat, index) => (
                         <DataCard
                             className="flex-1"

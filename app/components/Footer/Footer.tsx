@@ -7,6 +7,7 @@ import {
     FaLinkedinIn,
 } from "react-icons/fa";
 import SiteMap from "./SiteMap";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const Footer = () => {
     const socialsClass = clsx(
@@ -21,11 +22,15 @@ const Footer = () => {
                         <span className="block w-2 h-2 rounded-full bg-background-main"></span>
                         <p className="text-background-main">Savuney</p>
                     </div>
-                    <h2 className="font-medium leading-normal text-secondary">
+                    <SectionHeader
+                        variant="secondary"
+                        size="md"
+                        className="font-medium leading-normal text-secondary"
+                    >
                         Ready to bank
                         <br />
                         with confidence?
-                    </h2>
+                    </SectionHeader>
                     <div className="flex space-x-4 text-white text-xl">
                         <a href="#" className={socialsClass}>
                             <FaTwitter size={20} />

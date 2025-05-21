@@ -26,7 +26,7 @@ export default function OurServiceCard({
                 <div className="p-4 rounded-full bg-primary w-fit">
                     <img src={icon} alt="" className="h-8" />
                 </div>
-                <h5 className=" capitalize font-medium strong-text">{title}</h5>
+                <h6 className=" capitalize font-medium strong-text">{title}</h6>
                 <p className="light-text">{description}</p>
             </div>
             <span>

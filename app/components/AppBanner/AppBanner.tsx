@@ -13,10 +13,10 @@ export default function AppBanner() {
                     <p>Download now</p>
                     <IoIosRocket />
                 </div>
-                <div className="text-center space-y-4">
+                <div className="text-center space-y-4 relative z-[2]">
                     <SectionHeader
                         variant="tertiary"
-                        size="lg"
+                        size="md"
                         className="strong-text font-medium"
                     >
                         Download from Playstore/ App store

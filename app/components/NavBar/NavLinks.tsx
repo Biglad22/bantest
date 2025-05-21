@@ -17,13 +17,13 @@ const navLinks = [
 const Navbar: React.FC<{ className?: string }> = ({ className }) => {
     const [activeSection, setActiveSection] = useState("home");
     const classes = clsx(
-        "flex gap-3 px-parent-hor py-4 fixed top-0 left-0 z-50 items-center justify-between w-full bg-black/20 backdrop-blur-sm",
+        "flex  gap-3 px-parent-hor py-4 fixed top-0 left-0 z-50 items-center justify-between w-full bg-black/20 backdrop-blur-sm",
         className || ""
     );
     const [menuIsActive, setMenuIsActive] = useState(false);
 
     const menuTrayClass = clsx(
-        "absolute top-full space-y-4 lg:right-0 transition-all duration-500 w-fit p-6 bg-surface-dark rounded-md lg:contents",
+        "absolute top-full space-y-4 lg:space-y-0 lg:right-0 transition-all duration-500 w-fit p-6 bg-surface-dark rounded-md lg:contents",
         menuIsActive ? "right-0" : "right-[-100%]"
     );
 
@@ -55,7 +55,7 @@ const Navbar: React.FC<{ className?: string }> = ({ className }) => {
 
     return (
         <nav className={classes}>
-            <img src={Logo} alt="Savuney" className="h-8" />
+            <img src={Logo} alt="Savuney" className="h-6" />
             <div className={menuTrayClass}>
                 <div className="flex flex-col items-center justify-center lg:flex-row gap-2">
                     {navLinks.map((link) => (

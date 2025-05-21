@@ -59,7 +59,7 @@ export default function OurServicesSection() {
                 <SectionHeader
                     variant="secondary"
                     className="flex-1 strong-text"
-                    size="lg"
+                    size="md"
                 >
                     Banking made easy for all—anytime, anywhere.
                 </SectionHeader>

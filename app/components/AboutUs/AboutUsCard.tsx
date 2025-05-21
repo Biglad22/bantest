@@ -31,7 +31,7 @@ export default function AboutUsCard({
             }}
         >
             <div className="bg-surface-purple space-y-4 p-4 rounded-2xl border-2 mt-auto border-background-main  text-primary">
-                <h5 className=" capitalize font-medium">{title}</h5>
+                <h6 className=" capitalize font-medium">{title}</h6>
                 <p>{description}</p>
             </div>
         </div>
