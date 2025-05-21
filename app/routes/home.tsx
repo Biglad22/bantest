@@ -7,6 +7,7 @@ import WhyChooseUsSection from "~/components/WhyChooseUs/WhyChooseUsSection";
 import Footer from "~/components/Footer/Footer";
 import Overview from "~/components/Overview/Overview";
 import AppBanner from "~/components/AppBanner/AppBanner";
+import ReviewSection from "~/components/Reviews/ReviewSection";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -25,6 +26,7 @@ export default function Home() {
             <OurServicesSection />
             <WhyChooseUsSection />
             <AppBanner />
+            <ReviewSection />
             <Footer />
         </>
     );

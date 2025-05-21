@@ -189,3 +189,14 @@ body {
     @apply text-[#1D1D21];
 }
 
+.app-banner-decor {
+    background: linear-gradient(
+        156.2deg,
+        rgba(215, 240, 255, 0.6) 15.3%,
+        rgba(217, 207, 255, 0.6) 38.43%,
+        rgba(255, 209, 234, 0.6) 61.57%,
+        rgba(255, 227, 210, 0.6) 84.7%
+    );
+    transform: matrix(-0.35, -0.94, 0.89, -0.47, 0, 0);
+}
+

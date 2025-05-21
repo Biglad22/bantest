@@ -82,11 +82,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col md:flex-row gap-4 items-center justify-between mt-10">
-                <form className="flex gap-4">
+                <form className="flex gap-4 w-full max-w-80">
                     <input
                         type="email"
                         placeholder="Your email address"
-                        className="px-4 py-2 rounded-full bg-transparent border border-white placeholder-white text-white focus:outline-none"
+                        className="flex-1 px-4 py-2 rounded-full bg-transparent border border-white placeholder-white text-white focus:outline-none"
                     />
                     <button
                         type="submit"
