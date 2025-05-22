@@ -9,6 +9,9 @@ import {
     USSDAccessibility,
 } from "~/assets/images";
 import WhyChooseUsCard from "./WhyChooseUsCard";
+import useEmblaCarousel from "embla-carousel-react";
+import { SlArrowLeftCircle, SlArrowRightCircle } from "react-icons/sl";
+import Autoplay from "embla-carousel-autoplay";
 
 const whyChooseUsData = [
     {
@@ -34,25 +37,58 @@ const whyChooseUsData = [
 ];
 
 export default function WhyChooseUsSection() {
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+        Autoplay({ delay: 3000 }),
+    ]);
+
+    const scrollPrev = React.useCallback(
+        () => emblaApi?.scrollPrev(),
+        [emblaApi]
+    );
+    const scrollNext = React.useCallback(
+        () => emblaApi?.scrollNext(),
+        [emblaApi]
+    );
+
     return (
-        <section className="section relative bg-background-main">
-            <div className=" space-y-4 sm:w-[calc(60%+2.5rem)] sm:pr-10  h-full sm:absolute sm:top-0 sm:left-0 sm:px-parent-hor sm:py-parent-vert sm:z-40 sm:bg-gradient-to-r from-background-main from-65% to-background-main/0">
-                <SectionHeader size="md" className="font-normal">
-                    Why Choose savuney
-                </SectionHeader>
-                <p className="light-text">
-                    Discover solutions tailored to your needs.
-                </p>
-                <PrimaryButton>Join Savunry</PrimaryButton>
-            </div>
-            <div className="hide-scrollbar sm:pl-[40vw] sm:pr-[20vw] flex flex-col sm:flex-row gap-4 items-stretch overflow-auto md:min-w-screen">
-                {whyChooseUsData.map((item, index) => (
-                    <WhyChooseUsCard
-                        {...item}
-                        className="flex-1  min-w-full md:w-[12rem]"
-                        key={index}
-                    />
-                ))}
+        <section
+            className="section  bg-background-main center-section"
+            id="why-choose-us"
+        >
+            <div className="relative">
+                <div className=" space-y-4 md:w-1/2 h-full md:absolute md:top-0 md:left-0 md:px-parent-hor md:py-parent-vert md:z-40 bg-background-main">
+                    <SectionHeader size="md" className="font-normal">
+                        Why Choose savuney
+                    </SectionHeader>
+                    <p className="light-text">
+                        Discover solutions tailored to your needs.
+                    </p>
+                    <PrimaryButton>Join Savunry</PrimaryButton>
+                </div>
+                <div
+                    ref={emblaRef}
+                    className="w-full md:w-1/2 ml-auto overflow-hidden py-6"
+                >
+                    <div className="px-4 hide-scrollbar box-content grid grid-rows-1 grid-flow-col gap-4 items-stretch">
+                        {whyChooseUsData.map((item, index) => (
+                            <WhyChooseUsCard
+                                {...item}
+                                className="w-[calc(100vw-20vw)]  md:w-[30vw]"
+                                key={index}
+                            />
+                        ))}
+                    </div>
+                    <div className="w-fit py-4 ml-auto text-surface-dark flex items-center justify-center gap-4 ">
+                        <SlArrowLeftCircle
+                            className="size-8 cursor-pointer"
+                            onClick={scrollPrev}
+                        />
+                        <SlArrowRightCircle
+                            className="size-8 cursor-pointer"
+                            onClick={scrollNext}
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );

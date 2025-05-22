@@ -38,6 +38,10 @@ body {
     @apply px-parent-hor py-parent-vert min-h-screen w-screen space-y-12;
 }
 
+.center-section {
+    @apply flex flex-col justify-center;
+}
+
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
@@ -96,5 +100,5 @@ li {
     @apply text-sm sm:text-base;
 }
 small {
-    @apply text-xs sm:text-sm;
+    @apply text-[0.625rem] sm:text-xs;
 }

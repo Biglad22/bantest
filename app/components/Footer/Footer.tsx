@@ -14,8 +14,8 @@ const Footer = () => {
         "block leading-none p-4 rounded-full bg-primary text-background-main"
     );
     return (
-        <footer className="bg-footer text-white section !h-fit ">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+        <footer className="bg-footer text-white section center-section !h-fit ">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
                 {/* Left section */}
                 <div className="flex flex-col space-y-6 max-w-md">
                     <div className="flex items-center gap-3">
@@ -32,40 +32,48 @@ const Footer = () => {
                         with confidence?
                     </SectionHeader>
                     <div className="flex space-x-4 text-white text-xl">
-                        <a href="#" className={socialsClass}>
+                        <a
+                            href="https://x.com/savuneybank?s=09"
+                            target="_blank"
+                            className={socialsClass}
+                        >
                             <FaTwitter size={20} />
                         </a>
-                        <a href="#" className={socialsClass}>
+                        {/* <a href="#" className={socialsClass}>
                             <FaFacebookF size={20} />
-                        </a>
-                        <a href="#" className={socialsClass}>
+                        </a> */}
+                        <a
+                            href="https://www.instagram.com/savuneybank?igsh=cDJpcjNlejlrZzQ0"
+                            target="_blank"
+                            className={socialsClass}
+                        >
                             <FaInstagram size={20} />
                         </a>
-                        <a href="#" className={socialsClass}>
+                        {/* <a href="#" className={socialsClass}>
                             <FaLinkedinIn size={20} />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 
                 {/* Middle section */}
                 <div className="text-gray-400 flex flex-col md:flex-row gap-10 text-sm">
-                    <div className="space-y-4">
+                    {/* <div className="space-y-4">
                         <h6 className="text-white font-medium">Product</h6>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#">About</a>
+                                <a href="#about-us">About</a>
                             </li>
                             <li>
-                                <a href="#">Services</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="#">Why us</a>
+                                <a href="#why-choose-us">Why us</a>
                             </li>
                             <li>
-                                <a href="#">Testimonials</a>
+                                <a href="#testimonials">Testimonials</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
 
                     <div className="space-y-4">
                         <h6 className="text-white mb-2 font-medium">Support</h6>
@@ -86,12 +94,12 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-between mt-10">
-                <form className="flex flex-col sm:flex-row gap-2 w-full md:w-80">
+            <div className=" w-full flex flex-col md:flex-row gap-4 items-center justify-between mt-10">
+                <form className="flex flex-col w-full sm:w-auto  sm:flex-row gap-2 ">
                     <input
                         type="email"
                         placeholder="Your email address"
-                        className="flex-1 px-4 py-2 rounded-full bg-transparent border border-white placeholder-white text-white focus:outline-none"
+                        className="flex-1 px-4 py-2 rounded-full bg-transparent border border-white placeholder-white text-white focus:outline-none max-w-full md:max-w-80"
                     />
                     <button
                         type="submit"

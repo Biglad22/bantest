@@ -4,9 +4,9 @@ import { heroVideo, heroVidPreload } from "~/assets/images";
 
 export default function HeroPage() {
     return (
-        <section id="home" className="bg-surface-dark p-6 pt-0 block">
-            <div className="relative w-full h-screen flex items-center justify-start ">
-                <div className="absolute inset-0 w-full h-full overflow-hidden rounded-b-5xl ">
+        <section id="home" className="bg-surface-dark p-0 sm:p-6 pt-0 block">
+            <div className="relative w-full h-screen flex items-end justify-start ">
+                <div className="absolute inset-0 w-full h-full overflow-hidden rounded-none sm:rounded-b-5xl ">
                     <video
                         className="w-full h-full object-cover z-10"
                         src={heroVideo}

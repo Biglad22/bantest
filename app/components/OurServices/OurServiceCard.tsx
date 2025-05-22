@@ -29,14 +29,14 @@ export default function OurServiceCard({
                 <h6 className=" capitalize font-medium strong-text">{title}</h6>
                 <p className="light-text">{description}</p>
             </div>
-            <span>
+            {/* <span>
                 <PrimaryButton
                     className="!border-secondary"
                     icon={<HiOutlineArrowNarrowRight />}
                 >
                     <small>Get Started</small>
                 </PrimaryButton>
-            </span>
+            </span> */}
         </div>
     );
 }

@@ -18,11 +18,11 @@ const NavLinkItem: React.FC<NavLinkItemProps> = ({
         <a
             href={href}
             onClick={onClick}
-            className={`p-3 w-fit rounded-full font-medium transition-all duration-200 backdrop-blur-sm leading-none
+            className={`p-3 w-full lg:w-fit text-center rounded-full font-medium transition-all duration-200 backdrop-blur-sm leading-none
         ${
             active
                 ? "bg-secondary/40 border border-secondary  text-white"
-                : "bg-white/20 text-white hover:bg-white/30"
+                : "bg-white/40 text-white hover:bg-white/30 border border-white/20 hover:border-white/30"
         }`}
         >
             {label}

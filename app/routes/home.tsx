@@ -8,6 +8,7 @@ import Footer from "~/components/Footer/Footer";
 import Overview from "~/components/Overview/Overview";
 import AppBanner from "~/components/AppBanner/AppBanner";
 import ReviewSection from "~/components/Reviews/ReviewSection";
+import { PageTrackerProvider } from "~/context/Pagetracker";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -18,7 +19,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
     return (
-        <>
+        <PageTrackerProvider>
             <Navbar />
             <HeroPage />
             <AboutUsSection />
@@ -28,6 +29,6 @@ export default function Home() {
             <AppBanner />
             <ReviewSection />
             <Footer />
-        </>
+        </PageTrackerProvider>
     );
 }

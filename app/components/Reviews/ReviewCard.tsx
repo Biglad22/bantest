@@ -24,10 +24,10 @@ export default function ReviewCard({
         <div className={classes}>
             <div className="flex-1 space-y-4">
                 <div className="flex items-center w-fit gap-2">
-                    <span className="block p-4 rounded-full bg-secondary strong-text">
-                        <RiDoubleQuotesL className="size-6" />
+                    <span className="block p-3 rounded-full bg-secondary strong-text">
+                        <RiDoubleQuotesL className="size-5" />
                     </span>
-                    <span className="flex gap-2 p-4 bg-secondary ">
+                    <span className="flex gap-2 px-4 py-3 bg-secondary ">
                         {[0, 0, 0, 0, 0].map((_, index) => (
                             <FaStar
                                 key={index}
@@ -39,8 +39,8 @@ export default function ReviewCard({
                 </div>
                 <p className="strong-text py-2">{review}</p>
             </div>
-            <div className="text-center p-4 w-full text-background-main bg-primary">
-                <p className="font-medium mt-1">{reviewer}</p>
+            <div className="text-center px-4 py-3 w-full text-background-main bg-primary">
+                <p className="font-medium leading-none">{reviewer}</p>
                 <small className="font-regular">{role}</small>
             </div>
         </div>

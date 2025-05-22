@@ -54,7 +54,10 @@ const bankingServices = [
 
 export default function OurServicesSection() {
     return (
-        <section id="our-services" className="section bg-background-secondary">
+        <section
+            id="services"
+            className="section center-section bg-background-secondary"
+        >
             <div className="flex flex-col md:flex-row gap-4 items-start justify-between">
                 <SectionHeader
                     variant="secondary"

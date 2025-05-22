@@ -42,7 +42,7 @@ export default function AboutUsSection() {
                 </span>
             </div>
             <div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:items-stretch ">
                     {aboutUsData.map((data, index) => (
                         <AboutUsCard
                             key={index}
