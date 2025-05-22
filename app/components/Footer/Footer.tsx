@@ -39,9 +39,9 @@ const Footer = () => {
                         >
                             <FaTwitter size={20} />
                         </a>
-                        {/* <a href="#" className={socialsClass}>
+                        <a href="#" className={socialsClass}>
                             <FaFacebookF size={20} />
-                        </a> */}
+                        </a>
                         <a
                             href="https://www.instagram.com/savuneybank?igsh=cDJpcjNlejlrZzQ0"
                             target="_blank"
@@ -49,9 +49,9 @@ const Footer = () => {
                         >
                             <FaInstagram size={20} />
                         </a>
-                        {/* <a href="#" className={socialsClass}>
+                        <a href="#" className={socialsClass}>
                             <FaLinkedinIn size={20} />
-                        </a> */}
+                        </a>
                     </div>
                 </div>
 

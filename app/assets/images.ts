@@ -1,6 +1,6 @@
 import Logo from "./logo.svg";
 import OurMissionImg from "./our-mission.png";
-import OurVisionImg from "./our-vision.png";
+import OurVisionImg from "./our-vision.jpg";
 import POSTerminalIcon from "./pos-terminal.svg";
 import mobileAppIcon from "./mobile-app.svg";
 import ussdBankingIcon from "./ussd-bankig.svg";
@@ -17,8 +17,10 @@ import heroVidPreload from "./hero-preload.gif";
 import overlayBg from "./overlay-bg.svg";
 import overviewBg from "./overview-bg.svg";
 import mobileFrame from "./mobile-frame.svg";
+import heroImg from "./Hero.png"
 
 export {
+    heroImg,
     Logo,
     OurMissionImg,
     OurVisionImg,

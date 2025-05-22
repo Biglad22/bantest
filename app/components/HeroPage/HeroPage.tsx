@@ -1,6 +1,6 @@
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
-import { heroVideo, heroVidPreload } from "~/assets/images";
+import { heroVideo, heroImg } from "~/assets/images";
 
 export default function HeroPage() {
     return (
@@ -14,7 +14,7 @@ export default function HeroPage() {
                         loop
                         muted
                         playsInline
-                        poster={heroVidPreload}
+                        poster={heroImg}
                     />
                     {/* overlay */}
                     <div className="hero-overlay"></div>

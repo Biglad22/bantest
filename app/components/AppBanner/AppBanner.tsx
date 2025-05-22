@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import { IoIosRocket } from "react-icons/io";
 import { mobileFrame } from "~/assets/images";
-type Props = {};
+import MobileFrame from "~/Animations/MobileFrame";
 
 export default function AppBanner() {
     return (
@@ -26,11 +26,7 @@ export default function AppBanner() {
                     </h6>
                 </div>
                 {/* underlay */}
-                <img
-                    src={mobileFrame}
-                    alt=""
-                    className="w-full sm:w-1/2 md:w-80 h-auto mb-0 relative z-[2]"
-                />
+                <MobileFrame className="w-full sm:w-1/2 md:w-80 h-auto mb-0 relative z-[2]" />
                 <div className="absolute bottom-0 w-screen h-[100vw] app-banner-decor rounded-full left-1/2 top-1/2 -translate-1/2  z-[1] opacity-50 backdrop-blur-[500]"></div>
             </div>
         </section>
