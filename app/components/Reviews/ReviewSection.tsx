@@ -59,7 +59,7 @@ export default function ReviewSection() {
                         <ReviewCard
                             {...review}
                             key={review.reviewer}
-                            className="flex-1 min-w-1/2"
+                            className="flex-1 min-w-full sm:min-w-1/2"
                         />
                     ))}
                 </div>

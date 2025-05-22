@@ -56,7 +56,7 @@ export default function WhyChooseUsSection() {
             id="why-choose-us"
         >
             <div className="relative">
-                <div className=" space-y-4 md:w-1/2 h-full md:absolute md:top-0 md:left-0 md:px-parent-hor md:py-parent-vert md:z-40 bg-background-main">
+                <div className=" space-y-4 lg:w-1/2 h-full lg:absolute lg:top-0 lg:left-0 lg:px-parent-hor lg:py-parent-vert lg:z-40 bg-background-main">
                     <SectionHeader size="md" className="font-normal">
                         Why Choose savuney
                     </SectionHeader>
@@ -67,13 +67,13 @@ export default function WhyChooseUsSection() {
                 </div>
                 <div
                     ref={emblaRef}
-                    className="w-full md:w-1/2 ml-auto overflow-hidden py-6"
+                    className="w-full lg:w-1/2 ml-auto overflow-hidden py-6"
                 >
                     <div className="px-4 hide-scrollbar box-content grid grid-rows-1 grid-flow-col gap-4 items-stretch">
                         {whyChooseUsData.map((item, index) => (
                             <WhyChooseUsCard
                                 {...item}
-                                className="w-[calc(100vw-20vw)]  md:w-[30vw]"
+                                className="w-[calc(100vw-20vw)]  lg:w-[30vw]"
                                 key={index}
                             />
                         ))}

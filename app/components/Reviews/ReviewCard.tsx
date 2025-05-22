@@ -25,13 +25,13 @@ export default function ReviewCard({
             <div className="flex-1 space-y-4">
                 <div className="flex items-center w-fit gap-2">
                     <span className="block p-3 rounded-full bg-secondary strong-text">
-                        <RiDoubleQuotesL className="size-5" />
+                        <RiDoubleQuotesL className="size-3 sm:size-5" />
                     </span>
                     <span className="flex gap-2 px-4 py-3 bg-secondary ">
                         {[0, 0, 0, 0, 0].map((_, index) => (
                             <FaStar
                                 key={index}
-                                className="text-primary size-4"
+                                className="text-primary size-3 sm:size-4"
                             />
                         ))}
                     </span>
