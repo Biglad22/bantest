@@ -16,7 +16,7 @@ export default function PrimaryButton({
 }: Props) {
     const classes: string = clsx(
         className || "",
-        "flex items-center justify-center py-3 px-4 gap-2 w-fit rounded-4xl bg-primary border-3 border-background-main font-semibold",
+        "flex items-center cursor-pointer justify-center p-3 gap-2 w-fit rounded-4xl bg-primary border-3 border-background-main font-semibold",
         icon && "pr-2"
     );
 
@@ -24,7 +24,7 @@ export default function PrimaryButton({
         <motion.div
             whileHover={buttonHover}
             whileTap={buttonTap}
-            className="w-fit cursor-pointer"
+            className="w-fit "
         >
             <button {...props} className={classes}>
                 {children}

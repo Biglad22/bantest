@@ -19,7 +19,7 @@ export default function SiteMap({ className }: Props) {
             {/* Right section - NavLinks */}
             <div className={classes}>
                 {navLinks.map(({ label, href }) => (
-                    <a href={href} className={linkClass}>
+                    <a href={href} className={linkClass} key={label}>
                         {label}
                     </a>
                 ))}

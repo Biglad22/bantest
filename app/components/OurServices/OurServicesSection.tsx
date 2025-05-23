@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import PrimaryButton from "~/components/Buttons/PrimaryButton";
 import SectionHeader from "~/components/SectionHeader/SectionHeader";
 import {
@@ -10,6 +10,7 @@ import {
     ussdBankingIcon,
 } from "~/assets/images";
 import OurServiceCard from "./OurServiceCard";
+import { useActiveCard } from "~/Hook/useViewTransition";
 
 const bankingServices = [
     {
@@ -53,6 +54,8 @@ const bankingServices = [
 ];
 
 export default function OurServicesSection() {
+    const { latestCard, reduceActiveCards, updateActiveCards } =
+        useActiveCard();
     return (
         <section
             id="services"
@@ -75,8 +78,14 @@ export default function OurServicesSection() {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {bankingServices.map((service) => (
-                    <OurServiceCard {...service} key={service.title} />
+                {bankingServices.map((service, i) => (
+                    <OurServiceCard
+                        {...service}
+                        key={service.title}
+                        cardIsInView={latestCard === i}
+                        setView={() => updateActiveCards(i)}
+                        removeView={() => reduceActiveCards(i)}
+                    />
                 ))}
             </div>
         </section>

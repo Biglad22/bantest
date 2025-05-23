@@ -79,16 +79,45 @@ const Footer = () => {
                         <h6 className="text-white mb-2 font-medium">Support</h6>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#">FAQ</a>
+                                <a
+                                    href="#"
+                                    className="hover:text-white transition-all duration-500"
+                                >
+                                    FAQ
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Contact us</a>
+                                <a
+                                    href="#"
+                                    className="hover:text-white transition-all duration-500"
+                                >
+                                    Contact us
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Terms and conditions</a>
+                                <a
+                                    href="#"
+                                    className="hover:text-white transition-all duration-500"
+                                >
+                                    Terms and conditions
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Help Center</a>
+                                <a
+                                    href="#"
+                                    className="hover:text-white transition-all duration-500"
+                                >
+                                    Help Center
+                                </a>
+                            </li>
+                            <li className="mt-6">09050279192</li>
+                            <li>
+                                <a
+                                    href="mailto:hello@savuney.com"
+                                    className=" hover:text-white transition-all duration-500"
+                                >
+                                    hello@savuney.com
+                                </a>
                             </li>
                         </ul>
                     </div>
