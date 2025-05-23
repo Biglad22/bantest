@@ -58,12 +58,12 @@ export default function WhyChooseUsSection() {
             <div className="relative">
                 <div className=" space-y-4 lg:w-1/2 h-full lg:absolute lg:top-0 lg:left-0 lg:px-parent-hor lg:py-parent-vert lg:z-40 bg-background-main">
                     <SectionHeader size="md" className="font-normal">
-                        Why Choose savuney
+                        Why Choose Savuney
                     </SectionHeader>
                     <p className="light-text">
                         Discover solutions tailored to your needs.
                     </p>
-                    <PrimaryButton>Join Savunry</PrimaryButton>
+                    <PrimaryButton>Join Savuney</PrimaryButton>
                 </div>
                 <div
                     ref={emblaRef}
