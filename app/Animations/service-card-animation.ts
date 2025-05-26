@@ -5,6 +5,10 @@ export const cardParentAnime: Variants = {
         // backgroundColor: "rgba(255, 255, 255, 1)",
         // border: "2px solid rgba(255, 255, 255, 0)",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0)",
+        transition: {
+            duration: 0.5,
+            ease: "easeInOut",
+        },
     },
     hover: {
         // backgroundColor: "rgba(30, 0, 96, 1)",
