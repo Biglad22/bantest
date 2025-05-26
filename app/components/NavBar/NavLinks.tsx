@@ -25,7 +25,7 @@ const Navbar: React.FC<{ className?: string }> = ({ className }) => {
         <nav className={classes}>
             <img src={Logo} alt="Savuney" className="h-6" />
             <div className={menuTrayClass}>
-                <div className="flex flex-col items-center justify-center lg:flex-row gap-2">
+                <div className="flex flex-col items-center justify-center lg:flex-row gap-2 mx-auto">
                     {navLinks.map((link) => (
                         <NavLinkItem
                             key={link.href}
@@ -37,7 +37,7 @@ const Navbar: React.FC<{ className?: string }> = ({ className }) => {
                 </div>
                 <a
                     href="#"
-                    className="flex items-center gap-2 leading-none p-3 bg-surface-purple border-2 border-primary text-primary rounded-full font-medium "
+                    className="flex items-center gap-2 leading-none p-3 bg-surface-purple border-2 border-primary text-primary rounded-full font-medium"
                 >
                     <span>Get Started</span>
                     <PiCaretRightBold />

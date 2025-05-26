@@ -1,11 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import {
-    animate,
-    motion,
-    useAnimation,
-    useInView,
-    useMotionValue,
-} from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import clsx from "clsx";
 import {
     cardIconAnime,
@@ -56,24 +50,24 @@ export default function OurServiceCard({
             }
         >
             <div className="flex-1 space-y-4">
-                <motion.div
+                <div
                     className="p-4 rounded-full bg-primary w-fit"
-                    variants={cardIconAnime}
+                    // variants={cardIconAnime}
                 >
                     <img src={icon} alt="" className="h-8" />
-                </motion.div>
-                <motion.h6
+                </div>
+                <h6
                     className=" capitalize font-medium strong-text"
-                    variants={cardTextAnime}
+                    // variants={cardTextAnime}
                 >
                     {title}
-                </motion.h6>
-                <motion.span
+                </h6>
+                <span
                     className="light-text"
-                    variants={cardSmallTextAnime}
+                    // variants={cardSmallTextAnime}
                 >
                     <p>{description}</p>
-                </motion.span>
+                </span>
             </div>
             {/* <span>
                 <PrimaryButton
