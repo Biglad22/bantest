@@ -24,7 +24,7 @@ const whyChooseUsData = [
     },
     {
         image: USSDAccessibility,
-        title: "USSD accessibility",
+        title: "USSD accessibility", 
     },
     {
         image: lowInterest,
